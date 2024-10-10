@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: black;
+  font-family: "poppins", sans-serif;
+}
+.desc {
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  min-height: 10vh;
+  align-items: center;
+  margin: auto;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav-links,
+h1 {
+  color: white;
+}
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid red;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: 9999;
+  backdrop-filter: graysclae();
+}
+.link-grow {
+  transform: scale(2);
+  background: transparent;
+  border: 2px solid white;
+}
+.nav-links li {
+  padding: 0.7rem;
+}
+.hovered-link {
+  color: red;
+}
+.name {
+  font-size: 100px;
+  text-align: justify;
+  padding: 50px;
+}
+.header {
+  text-align: center;
+}
+.CV {
+  text-decoration: none;
+  color: black;
+}
+
+.tombol-CV {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  transition: background-color 1s;
+  z-index: 1;
+}
+.tombol-CV:hover {
+  background-color: red;
+  transition: all 0.3s ease-in;
+}
+.desc {
+  text-align: justify;
+  margin-left: 50px;
+  font-size: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: "100%";
+  height: 1100px;
+  margin-top: 600px;
+  z-index: -3;
+  position: relative;
+  text-align: justify;
+  z-index: 1;
+  position: relative;
+  justify-content: center;
+}
+.content-text {
+  font-size: 50px;
+  margin-top: 50px;
+  color: black;
+}
+.content-text:hover {
+  color: gray;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.react {
+  transition: color 0.5s ease-in-out;
+  color: #4e98b6;
+}
+.react:hover {
+  color: rgb(6, 201, 255);
+}
+.bottom {
+  height: 100px;
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+img {
+  height: 50px;
+  margin: 30px;
+  transition: transform 0.5s ease-in-out;
+}
+img:hover {
+  transform: translateY(-15px);
+}
