@@ -12,9 +12,6 @@ body {
   background-color: black;
   font-family: "poppins", sans-serif;
 }
-.desc {
-  color: white;
-}
 nav {
   display: flex;
   justify-content: space-between;
@@ -57,13 +54,29 @@ h1 {
 .hovered-link {
   color: red;
 }
+.nama {
+  margin-top: 90px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 160px;
+}
 .name {
   font-size: 100px;
   text-align: justify;
-  padding: 50px;
+  line-height: 160px;
+}
+.descr {
+  text-align: justify;
+  color: white;
+  margin-left: -630px;
+  font-size: 20px;
 }
 .header {
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .CV {
   text-decoration: none;
@@ -75,17 +88,14 @@ h1 {
   height: 50px;
   border-radius: 10px;
   position: relative;
-  transition: background-color 1s;
+  transition: background-color 1s ease-in-out, color 1s;
   z-index: 1;
+  border: 2px solid white;
 }
 .tombol-CV:hover {
+  color: white;
   background-color: red;
   transition: all 0.3s ease-in;
-}
-.desc {
-  text-align: justify;
-  margin-left: 50px;
-  font-size: 20px;
 }
 .content {
   display: flex;
@@ -134,4 +144,46 @@ img {
 }
 img:hover {
   transform: translateY(-15px);
+}
+.wraper {
+  display: inline-flex;
+}
+.wraper .static-txt {
+  color: white;
+  font-weight: 400;
+  font-size: 60px;
+}
+.dynamic-text {
+  margin-left: 20px;
+  line-height: 90px;
+  height: 90px;
+  /* overflow: hidden; */
+  margin-top: 35px;
+}
+.dynamic-text li {
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  color: burlywood;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(3) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -270px;
+  }
+}
+.dynamic-text li span {
+  position: relative;
+  margin-top: -90px;
+}
+.dynamic-text li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* border-left: 2px solid burlywood; */
+  /* background: bisque; */
 }

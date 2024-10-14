@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   let mouseCursor = document.querySelector(".cursor");
   let navLinks = document.querySelectorAll(
-    ".nav-links a, .tombol-CV, .bottom img, .feed"
+    ".nav-links a, .tombol-CV, .bottom img, .feed, .penjelasan2, .isi, .button, .desc "
   );
 
   if (mouseCursor) {
