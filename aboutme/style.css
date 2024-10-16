@@ -31,7 +31,7 @@ nav {
 .cursor {
   width: 2rem;
   height: 2rem;
-  border: 2px solid red;
+  border: 2.5px solid red;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);

@@ -31,7 +31,7 @@ nav {
 .cursor {
   width: 2rem;
   height: 2rem;
-  border: 2px solid red;
+  border: 2.5px solid red;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -93,4 +93,26 @@ img {
 .rumah {
   width: 100px;
   margin-right: 5px;
+}
+.bottom {
+  height: 100px;
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+.txt {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.bottom img {
+  width: 50px;
+  margin: 30px;
+  transition: transform 0.5s ease-in-out;
+}
+.bottom img:hover {
+  transform: translateY(-15px);
 }

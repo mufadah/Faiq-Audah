@@ -32,7 +32,7 @@ h1 {
 .cursor {
   width: 2rem;
   height: 2rem;
-  border: 2px solid red;
+  border: 2.5px solid red;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -137,6 +137,13 @@ a {
   text-align: center;
   justify-content: center;
 }
+.txt {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 img {
   height: 50px;
   margin: 30px;
@@ -148,7 +155,7 @@ img:hover {
 .wraper {
   display: inline-flex;
 }
-.wraper .static-txt {
+.static-txt {
   color: white;
   font-weight: 400;
   font-size: 60px;
@@ -157,17 +164,17 @@ img:hover {
   margin-left: 20px;
   line-height: 90px;
   height: 90px;
-  /* overflow: hidden; */
+  overflow: hidden;
   margin-top: 35px;
 }
 .dynamic-text li {
   list-style: none;
   font-size: 60px;
   font-weight: 500;
-  color: burlywood;
+  color: #b74b4b;
   position: relative;
   top: 0;
-  animation: slide 6s steps(3) infinite;
+  animation: slide 5s steps(3) infinite;
 }
 @keyframes slide {
   100% {
